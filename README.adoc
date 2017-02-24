@@ -1,0 +1,32 @@
+= WebViewer
+:author: Vivien Didelot
+:email: vivien.didelot@gmail.com
+:lang: en
+
+
+WebViewer is a QWebEngineView (i.e. Chromium) instance wrapper in a fullscreen 
+window, with a remote control to set the URL.
+
+=== Compile
+
+WebViewer requires qt5-webengine and can be built with qmake and make:
+
+----
+$ qmake
+$ make
+----
+
+=== Usage
+
+You can see the different options then start a WebViewer with:
+
+----
+$ ./webviewer -h
+$ ./webviewer
+----
+
+Set the URL from a terminal with:
+
+----
+$ echo http://demo.marpi.pl/spider/ | nc -u localhost 7755
+----
